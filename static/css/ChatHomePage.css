@@ -1,0 +1,763 @@
+body{
+    background:url('../images/index1.png') no-repeat;
+    height:100%;
+    width:100%;
+    overflow: hidden;
+    background-size:100%;
+    }
+
+.content{
+    width: 70%;
+    height: 98%;
+    position: absolute;
+    top: 1%;
+    left: 15%;
+    border-radius: 5px;
+    }
+
+.mytab{
+    background-color: #4b4b4d;
+    height: 100%;
+    user-select: none;
+    }
+.chatList{
+    width: 100%;
+    height: 100%;
+    background-color:#e6e5e5;
+    padding: 0; 
+    user-select: none;
+    }
+
+.headPortrait{
+    margin-top: 30%;
+    }
+#headPicture{
+    height:110%;
+    width: 110%;
+    border-radius: 4px;
+    user-select: none;
+    }
+#chatPicture{
+    width: 100%;
+    height: 50%;
+    user-select: none;
+    }
+#friendsListsPicture{
+    width: 100%;
+    height: 60%;    
+    }
+#settingsListsPicture{
+    width: 80%;
+    height: 60%;
+    user-select: none;
+    }
+.showChatLists{
+    margin-top: 35%;
+    margin-left: 30%;
+    user-select: none;
+    }
+.showFriendsLists{
+    margin-top: 35%;
+    margin-left: 30%;
+    user-select: none;
+    }
+.showSettingsLists{
+    margin-top: 35%;
+    margin-left: 30%;
+    user-select: none;
+    }
+
+.chatListHeadPicture{
+    width: 22%;
+    float: left;   
+    user-select: none; 
+    }
+    .chatListName{
+        float: left;
+        font-size: 14px;
+        width: 35%;
+        margin-left: 4%;
+        user-select: none;
+    }
+
+    .friend{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: 5%;
+        background-color:  #dedbdb;
+        border:0;
+        border-top:0.5px solid #e6e5e5;
+        border-bottom:0.5px solid #e6e5e5;
+        user-select: none;
+        
+    }
+    .friendsListHead{
+        padding: 2%;
+        width: 30%;
+        user-select: none;
+    }
+    .friendsListHeadPicture{
+        width: 80%;
+        border-radius: 50%;  
+        user-select: none;
+    }
+    .friend:hover{
+        -webkit-box-shadow: #c7c7c7 0px 0px 18px;
+        -moz-box-shadow: #c7c7c7 0px 0px 18px;
+        box-shadow: #c7c7c7 0px 0px 18px;
+        user-select: none;
+    }
+    .friendName{
+        color: #292828;
+        font-size: 14px;
+        width: 70%;
+        margin-top: 7.5%;
+text-align: center;
+user-select: none;
+    }
+    .roomListName{
+        float: left;
+        width: 65%;
+    margin-left: 5%;
+        font-size: 14px;
+        user-select: none;
+    }
+.roomNumber{
+    float: right;
+    font-size: 13px;
+    width: 20%;
+    color: #666666;
+    text-align: left;
+    padding-right: 2%;
+    user-select: none;
+
+}
+.clear1{
+    width: 7%;
+    height: 1%;
+    color: #fff;
+    float: right;
+    border-radius: 50%;
+    text-align: center;
+    margin-top: 1.5%;
+    line-height: 100%;
+    cursor: pointer;
+    padding-bottom: 1%;
+    font-size: 12px;
+    background-color: #a79f9f;
+    user-select: none;
+}
+    .chatTime{
+        float: right;
+        font-size: 13px;
+        width: 30%;
+        user-select: none;
+    }
+    .chatContent{
+        float: left;
+        font-size: 12px;
+        width: 64%;
+        height: 20%;
+        margin-left: 4%;
+        color:	#696969;
+        margin-top: 2.5%;
+        user-select: none;
+    }
+    .PrivateChatFriends{
+        color: #838383;
+        font-size: 14px;
+        padding: 2%;
+        width: 100%;
+        text-align: center;
+        user-select: none;
+    }
+    .GroupChatRooms{
+        color: #838383;
+        font-size: 14px;
+        padding: 3%;
+        width: 100%;
+        text-align: center;
+        user-select: none;
+    }
+    .myModal{
+        width: 100%;
+        height: 100%;
+        overflow-y: scroll;
+        display: none;
+
+    }
+    .myModal::-webkit-scrollbar {display:none}
+    .myModal::-moz-scrollbar {display:none}
+    .myModal::-ms-scrollbar {display:none}
+
+    .chatLists{
+        padding: 4%;
+        float: left;
+        user-select: none;
+        width: 100%;
+        background-color: #dedbdb;
+        border:0;
+        border-top:0.5px solid #e6e5e5;
+        border-bottom:0.5px solid #e6e5e5;
+        user-select: none;
+        user-select: none;
+    }
+
+    .chatLists1{
+        padding: 4%;
+        user-select: none;
+        float: left;
+        user-select: none;
+        width: 100%;
+        background-color: #dedbdb;
+        border:0;
+        border-top:0.5px solid #e6e5e5;
+        border-bottom:0.5px solid #e6e5e5;
+        user-select: none;
+        
+    }
+    .chatLists:hover{
+        -webkit-box-shadow: #c7c7c7 0px 0px 18px;
+        -moz-box-shadow: #c7c7c7 0px 0px 18px;
+        box-shadow: #c7c7c7 0px 0px 18px;
+        user-select: none;
+
+
+    }
+.clear{
+    background-color: #a79f9f;
+    width: 7%;
+    height: 1%;
+    color: #fff;
+    float: right;
+    border-radius: 50%;
+    text-align: center;
+    margin-top: 5%;
+    line-height: 100%;
+    cursor: pointer;
+    padding-bottom: 1%;
+    font-size: 12px;
+    display: none;
+    background-color: #a79f9f;
+    user-select: none;
+
+}
+
+    .Search{
+        margin-bottom: 4%;
+        margin-top:3%;
+        margin-left: 5%;
+    }
+    .searchInput{
+        background-color: #f5f5f5;
+        border-radius: 3px;
+        outline: none;
+        border-style: solid ;
+        border-width: 0.8px;
+        border-color:#CDC9C9;
+        padding-left: 3%;
+        width: 85%;
+        font-size: 90%;
+        font-weight: 510;
+    }
+    .addFriends{
+        user-select: none;
+        background-color: #fff;
+        width: 9.5%;
+        height: 3.8%;
+        border-radius: 5px;
+        text-align: center;
+        border-style: solid;
+        border-width: 0.7px;
+        border-color: #cdc9c9;
+        font-size: 20px;
+        position: absolute;
+        top: 1.5%;
+        right: 2.5%;
+        cursor: pointer;
+
+    }
+    .addFriends::before{
+        content: '';
+        position: absolute;
+        top: 47%;
+        right: 15%;
+        width: 65%;
+        border-top: 1.5px solid;
+        border-color:  #cdc9c9;
+      }
+
+      .addFriends::after {
+        content: '';
+        position: absolute;
+        top: 20%;
+        right: 45%;
+        height: 65%;
+        border-left: 1.5px solid;
+        border-color:  #cdc9c9;
+
+       }
+
+       .add{
+        user-select: none;
+           background-color: #f5f5f5;
+           padding-top: 5%;
+           padding-bottom: 5%;
+           position: absolute;
+           top: 7.2%;
+           right: 1%;
+           width: 50%;
+           border-radius: 5px;
+           text-align: center;
+           -webkit-box-shadow: #c7c7c7 0px 0px 18px;
+           -moz-box-shadow: #c7c7c7 0px 0px 18px;
+           box-shadow: #c7c7c7 0px 0px 18px;
+           color: #666666;
+           font-size: 14px;
+           display: none;
+       }
+.searchFriends{
+    padding: 2%;
+    user-select: none;
+}
+.searchFriends:hover{
+    background-color: #dedbdb;
+}
+.searchRooms{
+    padding: 2%;
+    user-select: none;
+}
+.searchRooms:hover{
+    background-color: #dedbdb;
+
+}
+.addRooms{
+    padding: 2%;
+    user-select: none;
+}
+.addRooms:hover{
+    background-color: #dedbdb;
+
+}
+       .add::before{
+        content: '';
+        position: absolute;
+        left: 82%;
+        top: -11%;
+        border-bottom: 10px solid #f5f5f5;
+        border-right:8px solid transparent;
+        border-left: 8px solid transparent;  
+        user-select: none;
+        }
+
+
+        .createRoom{
+            user-select: none;
+            width: 100%;
+            position: absolute;
+            top: 30%;
+            left: 120%;
+            background-color: #9b9b9b;
+            z-index: 100;
+            color: #fff;
+            text-align: center;
+            border-radius: 6px;
+            height: 20%;
+            -webkit-box-shadow:  #838383 0px 0px 18px;
+            -moz-box-shadow:  #838383 0px 0px 18px;
+            box-shadow:  #838383 0px 0px 18px;
+            display: none;
+            opacity: 0.95;
+        }
+        .create{
+            border-radius: 3px;
+            border-style: none;
+            width: 90%;
+            user-select: none;
+        }
+        .addRoomName{
+            margin: 3%;
+            user-select: none;
+        }
+
+        .choice{
+            user-select: none;
+            text-align: center;
+            padding: 2%;
+            border-radius: 4px;
+            height: 20%;
+            font-size: 14px;
+        }
+        .choice:hover{
+            background-color: #4b4b4d;
+        }
+
+
+        .addRoomSuccess{
+            position: absolute;
+            top: 40%;
+            left: 135%;
+            z-index: 100;
+            width: 70%;
+            padding: 2.5%;
+            color: #666666;
+            background-color: #c2bfbf;
+            border-radius: 5px;
+            text-align: center;
+            -webkit-box-shadow: #c7c7c7 0px 0px 18px;
+            -moz-box-shadow: #c7c7c7 0px 0px 18px;
+            box-shadow: #c7c7c7 0px 0px 18px;
+            display: none;
+        }
+    .chatPage{
+        background-color: #f5f5f5;
+        height: 100%;
+        padding: 0;
+
+    }
+.ChattingName{
+    width: 100%;
+    height: 5.5%;
+    padding-left: 5%;
+    margin-top: 1.4%;
+    user-select: none;
+    }
+.operation{
+    color: #818181;
+    position: absolute;
+    font-size: 28px;
+    top: -1.5%;
+    right: 4%;
+    cursor: pointer;
+
+}
+.operationLists{
+    background-color: #f5f5f5;
+           padding-top: 1%;
+           padding-bottom: 1%;
+           position: absolute;
+           top: 7.2%;
+           right: 2%;
+           width: 20%;
+           border-radius: 5px;
+           text-align: center;
+           -webkit-box-shadow: #c7c7c7 0px 0px 18px;
+           -moz-box-shadow: #c7c7c7 0px 0px 18px;
+           box-shadow: #c7c7c7 0px 0px 18px;
+           color: #666666;
+           font-size: 14px;
+           display: none;
+           user-select: none;
+}
+
+.operationLists::before{
+    content: '';
+    position: absolute;
+    left: 75%;
+    top: -20%;
+    border-bottom: 12px solid #f5f5f5;
+    border-right:8px solid transparent;
+    border-left: 8px solid transparent;  
+
+    }
+.signOut{
+    padding: 3%;
+}
+    .signOut:hover{
+            background-color: #e6e5e5;
+
+        
+        }
+   
+.myConversation{
+    width: 100%;
+    height: 67%;
+    padding: 3%;
+    background-color: #f5f5f5;
+    display: none;
+    overflow-y: scroll;
+    
+    }
+.myConversation::-webkit-scrollbar {display:none}
+.myConversation::-moz-scrollbar {display:none}
+.myConversation::-ms-scrollbar {display:none}
+
+#小树洞{
+    display: block;
+}
+.otherPicture{
+    float: left;
+    width: 10%;
+    border-radius: 3px;
+    user-select: none;
+    }
+.otherWord{
+    float: left;
+    background-color: #fff;
+    padding: 1.2%;
+    margin-left: 3%;
+    margin-top: 1%;
+    border-radius: 3px;
+    max-width: 80%;
+    position: relative;
+    font-size: 14px;
+    }
+    .otherWord::before{
+        content: '';
+        position: absolute;
+        left: -15%;
+        top: 26.5%;
+        border-top: 5px solid transparent;
+        border-bottom: 5px solid transparent;
+        border-right:9px solid #fff;
+        user-select: none;
+    
+        }
+    .otherName{
+        font-size: 12px;
+        margin-left: 13%;
+    }
+.myWord{
+    border-radius: 3px;
+    max-width: 80%;
+    background-color: 	#87CEFF;
+    margin-right: 3%;
+    margin-top: 1%;
+    padding: 1.2%;
+    float: right;
+    font-size: 14px;
+    }
+.myPicture{
+    float: right;
+    width: 10%;
+    border-radius: 3px;
+    margin-top: 1%;
+    user-select: none;
+    }
+.otherWords{
+    margin-top: 1.5%;
+    float: left;
+    width: 80%;
+    
+   
+    }
+
+.myWords{
+   float: right;
+    width: 80%;
+    margin-top: 1.5%;
+    position: relative;
+ 
+    }
+.myWord::after{
+    content: '';
+    position: absolute;
+    left: 87%;
+    top: 40%;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-left:9px solid #87CEFF;
+    user-select: none;
+    }
+    
+.systemMessage{
+    color: rgb(114, 114, 114);
+    float: left;
+    font-size: 12px;
+    width: 100%;
+    text-align: center;
+    margin-top: 2%;
+    user-select: none;
+    }
+
+.Chatting{ 
+    padding-left: 4%;
+
+    }
+.myInput{
+    outline: none;
+    -webkit-appearance: none;
+    border-radius: 0;
+    border:0;
+    background-color: #f5f5f5;
+    font-size: 14px;
+
+    }
+ 
+.myInput::-webkit-scrollbar {
+    width: 4px;    
+    /*height: 4px;*/
+    }
+.myInput::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 5px rgba(163, 162, 162, 0.2);
+    background: rgba(87, 86, 86, 0.2);  
+    }
+.myInput::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 5px rgba(163, 162, 162, 0.2);
+    border-radius: 0;
+    background:rgba(87, 86, 86, 0.2);
+    }
+ 
+
+.otherFunctions{
+    width: 100%;
+    height: 6%;
+    padding-top: 0.8%;
+    user-select: none;
+    }
+
+.sendWord{
+    margin-left: 85%;
+    background-color: #f5f5f5;
+    border-color: #e5e5e5;
+    color: #666666;
+    border-style: solid;
+    outline: none;
+    appearance: none;
+    width: 11%;
+    text-align: center;
+    border-width: 1.5px;
+    user-select: none;
+    }
+.sendWord:hover{
+    background-color:rgb(103, 190, 253);
+    color:#fff;
+    }
+.sendWord:active{
+    background-color:rgb(103, 190, 253);
+    color:#fff;
+    }
+.Emotion{
+    width: 3%;
+    margin-left: 5%;
+    }
+.Emotion1{
+    width: 3%;
+    margin-left: 3%;
+    }
+.sendModal{
+    background-color: #f5f5f5;
+    width: 100%;
+    height: 100%;
+    user-select: none;
+    }
+
+    .joinlistName{
+        color: #838383;
+        font-size: 14px;
+        text-align: center;
+        padding: 2%;
+        user-select: none;
+    }
+    .createListName{
+        color: #838383;
+        font-size: 14px;
+        text-align: center;
+        padding: 2%;
+        user-select: none;
+    }
+    .myFriends{
+        color: #838383;
+        font-size: 14px;
+        text-align: center;
+        padding: 2%;
+        user-select: none;
+    }
+    .room{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: 10%;
+        padding: 2%;
+        background-color: #dedbdb;
+        border:0;
+        border-top:0.5px solid #e6e5e5;
+        border-bottom:0.5px solid #e6e5e5;
+        user-select: none;
+        
+    }
+    .room:hover{
+        -webkit-box-shadow: #c7c7c7 0px 0px 18px;
+        -moz-box-shadow: #c7c7c7 0px 0px 18px;
+        box-shadow: #c7c7c7 0px 0px 18px;
+        user-select: none;
+    }
+    .roomName{
+        font-size: 14px;
+        color: #4b4b4d;
+        width: 70%;
+        margin-left: 5%;
+        text-align: left;
+        user-select: none;
+
+    }
+    .number{
+        font-size: 13px;
+        color: #696969;
+        width: 25%;
+        margin-right: 1%;
+        text-align: right;
+        user-select: none;
+    }
+  
+		.widget-layer {
+            position: absolute;
+            top: 35%;
+            left: 39%;
+            width: 30%;
+            height: 35%;
+			margin-top: 8px;
+			background: #fff;
+			border: 1px solid #dbdbdb;
+            border-radius: 5px;
+            z-index: 120;
+            display: none;
+        }
+        .widget-layer::after{
+            content: '';
+            position: absolute;
+            left:5.5%;
+            top: 100%;
+            border-top: 14px solid #dbdbdb;
+            border-right: 9px solid transparent;
+            border-left:9px solid transparent;
+            user-select: none;
+            }
+		.widget-layer ul {
+			width: 372px;
+			margin: 0 auto;
+			padding: 15px 5px 20px;
+			overflow: hidden;
+		}
+
+		.widget-layer li {
+			position: relative;
+			z-index: 8;
+			float: left;
+			width: 22px;
+			height: 22px;
+			padding: 4px;
+			margin-left: -1px;
+			margin-top: -1px;
+			border: 1px solid #e8e8e8;
+			cursor: pointer;
+      list-style: none;
+      margin: 1%;
+      user-select: none;
+		}
+
+    .widget-layer li img{
+			width: 22px;
+      height: 22px;
+      position: relative;
+      top: -8px;
+      left: -5px;
+     
+		}
+
+		.widget-layer li:hover {
+			z-index: 9;
+			border-color: #eb7350;
+		}
